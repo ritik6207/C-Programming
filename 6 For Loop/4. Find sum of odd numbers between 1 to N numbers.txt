@@ -1,0 +1,15 @@
+//print Sum of Odd numbers using between 1 to N numbes
+#include <stdio.h>
+int main()
+{
+	int i,n,sum=0;
+	printf("1+3+5..........+n:\n", n);
+	scanf("%d",&n);
+	printf("You entered Numbers:>> %d\n", n);
+	for(i=1;i<=n;i=i+2)
+	{
+		sum=sum+i;
+	}
+	printf("Odd number Sum=%d",sum);
+	return 0;
+}

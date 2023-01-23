@@ -1,0 +1,15 @@
+//Multiplication table 
+#include <stdio.h>
+int main()
+{
+    int i,n,r;
+    printf("Enter a number for table:\n");
+    scanf("%d",&n);
+    printf("you entered numbrs>> %d\n",n);
+    for(i=1;i<=10;i++)
+    {
+        r=n*i;
+        printf("%d*%d = %d\n",n,i,r);
+    }
+    return 0;
+}

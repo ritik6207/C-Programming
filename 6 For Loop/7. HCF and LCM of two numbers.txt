@@ -1,0 +1,24 @@
+//LCM and HCF of two numbers:
+#include <stdio.h>
+int main()
+{
+	int a,b,s,hcf,lcm;
+	printf("Enter the value of A and B:\n");
+	scanf("%d%d",&a,&b);
+	if(a>b)
+		s=a;
+	else
+		s=b;
+	for(int i=1;i<=s;i++)
+	{
+		if((a%i==0)&&(b%i==0))
+		{
+			hcf=i;
+		}
+	}
+	printf("\n HCF number is = %d",hcf);
+	lcm=(a*b)/hcf;
+	printf("\n LCM number is = %d",lcm);
+	return 0;
+	
+}
