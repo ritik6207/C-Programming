@@ -1,0 +1,15 @@
+//Example show use of Putchar
+#include<stdio.h>
+
+int main()
+{
+  char a,b;
+  
+   printf("\nEnter one lowercase character\n");
+   a=getchar();
+   printf("Lowercase character is ==>");
+   putchar(a);
+   printf("\n\nCharacter in uppercase ==>");
+   putchar(a-32);
+   return 0;
+}

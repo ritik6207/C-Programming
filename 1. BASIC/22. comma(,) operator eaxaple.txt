@@ -1,0 +1,13 @@
+//comma(,)  operator Example
+#include <stdio.h>
+
+int main()
+{
+    int n,m;
+    printf("program to comma operator \n\n");
+    printf("\nEnter the value of N:\n");
+    scanf("%d",&n);
+    m=(n,n+5,n+n);
+    printf("\nAfter use of comma operator value is %d",m);
+    return 0;
+}

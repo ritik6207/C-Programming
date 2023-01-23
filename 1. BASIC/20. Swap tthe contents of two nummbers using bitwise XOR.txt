@@ -1,0 +1,15 @@
+//Swap tthe contents of two nummbers using bitwise XOR
+#include <stdio.h>
+
+int main()
+{
+    long i,k;
+    printf("Enter two intergers:\n");
+    scanf("%ld %ld",&i,&k);
+    printf("Before Swapping: \ni = %ld \nk = %ld",i,k);
+    i=i^k;
+    k=i^k;
+    i=i^k;
+    printf("\nAfter Swapping: \ni = %ld \nk = %ld",i,k);
+    return 0;
+}
