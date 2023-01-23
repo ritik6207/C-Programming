@@ -1,0 +1,22 @@
+//Arithmetic operators
+#include <stdio.h>
+int main()
+{
+	int a,b,sum,sub,mul,idiv,rem;
+	float rdiv;
+	printf("Enter the value of a and b:\n");
+	scanf("%d%d",&a,&b);
+	sum=a+b;
+	sub=a-b;
+	mul=a*b;
+	idiv=a/b;
+	rem=a%b;
+	rdiv=(float)a/(float)b;
+	printf("\nsum=%d",sum);
+	printf("\nsub=%d",sub);
+	printf("\nmul=%d",mul);
+	printf("\nidiv=%d",idiv);
+	printf("\nrem=%d",rem);
+	printf("\nrdiv=%f",rdiv);
+	return 0;
+}

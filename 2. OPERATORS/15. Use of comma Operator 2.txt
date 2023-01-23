@@ -1,0 +1,12 @@
+// Use of comma operator 2
+#include <stdio.h>
+int main()
+{
+	int num,sq,cube;
+    printf("Enter the value of number:\n");
+    scanf("%d",&num);
+    sq = (num*num) , cube=(num*num*num);
+    printf("\n The square of %d is: %d",num,sq);
+     printf("\n The cube of %d is: %d",num,cube);
+     return 0;
+}

@@ -1,0 +1,15 @@
+//prefix and postfix increment Operator
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	a=10;
+	b=++a;
+	printf("\n After prefix increment:");
+	printf("\n a=%d and b=%d",a,b);
+	a=10;
+	b=a++;
+	printf("\n After postfix increment:");
+	printf("\n a=%d and b=%d",a,b);
+	return 0;
+}

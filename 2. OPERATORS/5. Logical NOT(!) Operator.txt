@@ -1,0 +1,11 @@
+//Logical NOT (!) Operators
+#include <stdio.h>
+int main()
+{
+	int  a;
+	a= !(5<1);
+	printf(" \n !(5<1) is =%d",a);      //1=true and 0=false
+	a= !(5>1);
+	printf("\n !(5>1) is =%d",a);
+	return 0;
+}

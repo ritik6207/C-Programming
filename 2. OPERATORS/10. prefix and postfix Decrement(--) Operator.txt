@@ -1,0 +1,15 @@
+//prefix and postfix Decrement Operator
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	a=10;
+	b=--a;
+	printf("\n After prefix decrement:");
+	printf("\n a=%d and b=%d",a,b);
+	a=10;
+	b=a--;
+	printf("\n After postfix decrement:");
+	printf("\n a=%d and b=%d",a,b);
+	return 0;
+}

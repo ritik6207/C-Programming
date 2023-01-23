@@ -1,0 +1,19 @@
+//sizeof() Operator
+#include <stdio.h>
+int main()
+{
+	int a=100,b;
+	b=sizeof(a);
+	printf("\n sizeof of a : %d",b);
+	b=sizeof(double);
+	printf("\n sizeof of double : %d",b);
+	b=sizeof(123L);
+	printf("\n sizeof of 123L : %d",b);     //in byte
+	b=sizeof(12.45);
+	printf("\n sizeof of 12.45 : %d",b);
+	b=sizeof(123.45f);
+	printf("\n sizeof of 123.45f : %d",b);
+	b=sizeof(char);
+	printf("\n sizeof of char : %d",b);
+	return 0;
+}

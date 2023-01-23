@@ -1,0 +1,12 @@
+//program to explain Expression
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,d,p;
+    printf("Enter the value of a , b, c,and d:\n");
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    p=(a+b)/(c-d);
+    printf("The value of p is : %d",p);
+    return 0;
+}

@@ -1,0 +1,15 @@
+//Type Conversion
+#include <stdio.h>
+
+int main()
+{
+    int x,y;
+    float a;
+    printf("Enter the value of x and y:\n");
+    scanf("%d%d",&x,&y);
+    a=x/y;
+    printf("\n Value of a (whithout casting ) = %f",a);
+    a=(float) x/y;
+    printf("\n Value of a (whith casting ) = %f",a);
+    return 0;
+}

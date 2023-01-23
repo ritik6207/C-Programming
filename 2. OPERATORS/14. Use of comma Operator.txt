@@ -1,0 +1,11 @@
+//Use of comma operator 1
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	c=(a=10,b=20,a+b);
+	printf("\n a : %d",a);
+	printf("\n b : %d",b);
+	printf("\n c : %d",c);
+	return 0;
+}
