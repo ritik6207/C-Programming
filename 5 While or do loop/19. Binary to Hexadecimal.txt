@@ -1,0 +1,18 @@
+//binary to Hexdecimal:-
+
+#include <stdio.h>
+int main()
+{
+	long int binarynum,hexadecimalnum=0,j=1,rem;
+	printf("Enter a binary Numbers:\n");
+	scanf("%ld",&binarynum);
+	while(binarynum!=0)
+	{
+		rem=binarynum%10;
+		hexadecimalnum=hexadecimalnum+rem*j;
+		j=j*2;
+		binarynum=binarynum/10;
+	}
+	printf("\nEquivalent Hexadecimal value : %lX ", hexadecimalnum);
+	return 0;
+}

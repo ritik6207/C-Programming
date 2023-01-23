@@ -1,0 +1,42 @@
+//Binary to Decimal
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	long num;
+	int rem=0,dec=0,place=0;
+	printf("Enter a Binary Number:\n");
+	scanf("%ld",&num);
+	printf("Decimal Eqavalent of %ld is ",num);
+	while(num)
+	{
+		rem=num%10;                 //
+		if(rem)
+		{
+			dec=dec+(pow(2,place));
+		}
+		num=num/10;
+		place++;
+	}
+	printf("%d\n",dec);
+	return 0;
+}
+
+//2nd Method:-
+
+/*#include <stdio.h>
+int main()
+{
+	long int binarynum,decimalnum=0,j=1,rem;
+	printf("Enter a binary Numbers:\n");
+	scanf("%ld",&binarynum);
+	while(binarynum!=0)
+	{
+		rem=binarynum%10;
+		decimalnum=decimalnum+rem*j;
+		j=j*2;
+		binarynum=binarynum/10;
+	}
+	printf("\nEquivalent Decimal value : %ld ", decimalnum);
+	return 0;
+}*/

@@ -1,0 +1,20 @@
+//Convert second into hours,minutes and remaining second:
+#include <stdio.h>
+int main()
+{
+    int ts,h=0,m=0,s;
+    printf("Enter total second:\n");
+    scanf("%d",&ts);
+    while(ts>=60)
+    {
+        m++;
+        while(m>=60)
+        {
+            h++;
+            m=m-60;
+        }
+        ts=ts-60;
+    }
+    printf("HH:MM:SS = %d:%d:%d",h,m,ts);
+    return 0;
+}

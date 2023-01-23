@@ -1,0 +1,18 @@
+//binary to Octal:-
+
+#include <stdio.h>
+int main()
+{
+	long int binarynum,octalnum=0,j=1,rem;
+	printf("Enter a binary Numbers:\n");
+	scanf("%ld",&binarynum);
+	while(binarynum!=0)
+	{
+		rem=binarynum%10;
+		octalnum=octalnum+rem*j;
+		j=j*2;
+		binarynum=binarynum/10;
+	}
+	printf("\nEquivalent Octal value : %lo ", octalnum);
+	return 0;
+}
