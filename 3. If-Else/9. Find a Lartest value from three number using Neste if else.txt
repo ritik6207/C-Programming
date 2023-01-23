@@ -1,0 +1,32 @@
+//Neste if else Example
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    printf("Enter the value of a,b and c:\n");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b)
+    {
+        if(a>c)
+        {
+            printf("\nA is Big value:");
+        }
+        else
+        {
+            printf("\nC is Big value:");
+        }
+    }
+    else
+    {
+        if(b>c)
+        {
+            printf("\nB is Big value:");
+        }
+        else
+        {
+            printf("\nC is Big value:");
+        }
+    }
+    return 0;
+}

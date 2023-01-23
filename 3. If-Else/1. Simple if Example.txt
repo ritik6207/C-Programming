@@ -1,0 +1,14 @@
+//Simple if example
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("Enter the numbers:\n");
+    scanf("%d",&a);
+    if(a>100)
+    {
+        printf("\n number is grater than 100.");
+    }
+    return 0;
+}

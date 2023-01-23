@@ -1,0 +1,18 @@
+//chack character is alphanummeric
+#include <stdio.h>
+#include <ctype.h>
+int main()
+{
+    int ch;
+    printf("Enter any character::\n");
+    ch=getchar();
+    if(isalnum(ch))
+    {
+        printf("\nIt is alph-numeric character:\n");
+    }
+    else
+    {
+        printf("\nIt is not alph-numeric character:\n");
+    }
+    return 0;
+}

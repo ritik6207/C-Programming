@@ -1,0 +1,38 @@
+//Calculator using Else if
+#include <stdio.h>
+
+int main()
+{
+    char op;
+    float a,b,result;
+    printf("Enter the value of A and B:\n");
+    scanf("%f%f",&a,&b);
+    printf("Operator [+,-,*,/]::\n");
+    fflush(stdin);
+    scanf("%c",&op);
+    if(op=='+')
+    {
+        result=a+b;
+        printf("Result:>>%.2f",result);
+    }
+    else if(op=='-')
+    {
+        result=a-b;
+        printf("Result:>>%.2f",result);
+    }
+     else if(op=='*')
+    {
+        result=a*b;
+        printf("Result:>>%.2f",result);
+    }
+     else if(op=='/')
+    {
+        result=a/b;
+        printf("Result:>>%.2f",result);
+    }
+    else
+    {
+        printf("Invalid choice:");
+    }
+    return 0;
+}

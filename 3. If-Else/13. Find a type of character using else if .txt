@@ -1,0 +1,18 @@
+//Find a any type of character
+#include <stdio.h>
+#include <ctype.h>
+int main()
+{
+    char ch;
+    printf("Enter any character::\n");
+    scanf("%c",&ch);
+    if(isupper(ch))
+        printf("\nIt is uppercase char.....!\n");
+    else if(islower(ch))    
+        printf("\nIt is lowercase char......!\n");
+    else if(isdigit(ch))    
+        printf("\nIt is digicase char......!\n");
+    else
+        printf("\nIt is special char......!\n");
+    return 0;
+}

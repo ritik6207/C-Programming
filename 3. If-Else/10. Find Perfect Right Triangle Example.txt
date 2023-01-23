@@ -1,0 +1,21 @@
+//Find perfect triangle 
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int a,b,c,x,y,z;
+    printf("Enter the value of a,b and c:\n");
+    scanf("%d%d%d",&a,&b,&c);
+    x=sqrt((a*a) + (b*b));
+    y=sqrt((c*c) + (b*b));
+    z=sqrt((a*a) + (c*c));
+    if(c==x||a==y||b==z)
+    {
+        printf("\nRight Traingle:");
+    }
+    else
+    {
+        printf("\nNot Right Traingle:");
+    }
+    return 0;
+}
